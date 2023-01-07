@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&displya=swap');
+@import 'second-body.css';
+@import 'third-body.css';
+@import 'fourth-body.css';
+
+html{
+    background-color: hsl(217, 100%, 97%);
+    font-size: 10px;
+    color: hsl(229, 24%, 87%);
+    font-family: 'ubuntu', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 600px;
+    height: 350px;
+    display: flex;
+    gap: 15px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+#second-body,
+#third-body,
+#first-body,
+#fifth-body{
+    display: none;
+}
+.section-1{
+    width: 200px;
+    height: 100%;
+     background-image:url('./assets/images/bg-sidebar-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+   } 
+.step-container, .body{
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    color: hsl(0, 0%, 100%);
+}
+
+.step{
+    width: fit-content;
+    height: 40px;
+    display: flex;
+    gap: 10px;
+    font-size: 0.9em;
+}
+.stp p:first-child{
+    font-size: 0.7em;
+    opacity: 0.7;
+}
+.bold{
+    font-weight: 700;
+}
+.stp{
+    line-height: 3px;
+    height: 30px;
+}
+.step button{
+    width: 25px;
+    height: 25px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    background-color: transparent;
+    color: hsl(0, 0%, 100%);
+    margin: auto;
+    cursor: pointer;
+}
+.step button:focus,
+.step button:hover{
+    background-color: hsl(206, 94%, 87%);
+    color: #000;
+    border: none;
+}
+.section-2{
+    width: 350px;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.body{
+    color:hsl(213, 96%, 18%);
+    font-size: 0.9em;
+    margin: 20px;
+}
+.body p{
+    color: hsl(231, 11%, 63%);
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+input{
+    height: 25px;
+    border: 1px solid hsl(229, 24%, 87%);
+    border-radius: 5px;
+    margin: 3px 0;
+    resize: none;
+    outline: hsl(243, 100%, 62%);
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+    box-sizing: border-box;
+}
+input:focus,
+.plan-box:hover{
+    border: 1px solid hsl(243, 100%, 62%);
+}
+.btn{
+    height: fit-content;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-next{
+    flex-direction: row-reverse;
+}
+.next, .back{
+    width: 70px;
+    height: 25px;
+    background-color: hsl(213, 96%, 18%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+.back{
+    background-color: transparent;
+    color:hsl(213, 96%, 18%) ;
+}
+.next:hover,.next:focus,
+.back:hover, .back:focus{
+    opacity: 1;
+}
