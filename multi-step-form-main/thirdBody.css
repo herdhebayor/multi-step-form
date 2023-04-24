@@ -1,0 +1,73 @@
+.parent {
+    width:100%;
+    height:fit-content;
+    border:1px solid hsl(243, 100%, 62%);
+    border-radius:10px;
+    display:flex;
+    overflow: none;
+    margin: 5px 0;
+    align-items:center;
+    padding:5px;
+    box-sizing:border-box;
+    background-color:hsl(231, 100%, 99%);
+   cursor:pointer; 
+   font-size: .8em;
+}
+.parent:hover{
+    background-color: transparent;
+}
+.price{
+    width:fit-content;
+    height:100%;
+    display:flex;
+    justify-items:center;
+    align-items:center;
+    margin-left: auto;
+    padding: 5px;
+    box-sizing: border-box;
+}
+.checkTxt{
+    width:fit-content;
+    height:100%;
+    justify-content: left;
+    align-items:center;
+    line-height:5px;
+    padding: 5px;
+}
+.check{
+    width: fit-content;
+    height: 100%;
+    padding: 5px;
+
+}
+.check_box{
+    width: 20px;
+    height: 15px;
+    margin: auto;
+}
+.check_box:checked{
+    background-color:hsl(243, 100%, 62%);
+    color:hsl(0, 0%, 100%);
+}
+@media screen and (max-width:600px){
+    .third{
+        width:90%;
+        height:fit-content;
+        border-radius:10px;
+        background-color:hsl(0, 0%, 100%);
+        position: absolute;
+        top:-80px;
+        right:0;
+        left:0;        
+        margin:auto;
+        padding:20px;
+        box-sizing:border-box;
+    }
+    .checkTxt{
+        width:fit-content;
+    }
+    .parent{
+        justify-content:space-evenly;
+    }
+    
+}

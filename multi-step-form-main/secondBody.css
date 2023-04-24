@@ -1,0 +1,130 @@
+.planParent{
+    display:flex;
+    gap:10px;
+} 
+.plansContainer{
+    border:2px solid hsl(229, 24%, 87%);
+    border-radius:10px;
+    width:33.3%;
+    height: 150px;
+    padding:10px;
+    box-sizing:border-box;
+    line-height:5px;
+    background-color: transparent;
+    cursor:pointer;
+    font-size: .8em;
+}
+.planBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.plansContainer:focus{
+    border-color:hsl(243, 100%, 20%);
+    background-color:hsl(231, 100%, 99%);
+}
+.plansContainer:hover{
+    border-color:hsl(243, 100%, 62%);
+}
+.logo{
+    width:100%;
+    height:50px;
+}
+.toggleBox{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    height:30px;
+    margin-top:20px;
+    align-items:center;
+    background-color:hsl(217, 100%, 97%);
+    border-radius:10px;
+    color:hsl(231, 11%, 63%);
+}
+.toggleBtn{
+    width:40px;
+    height:16px;
+    border-radius:20px;
+    background-color:hsl(213, 96%, 18%);
+    position:relative;
+    cursor:pointer;
+    padding: 3px ;
+    box-sizing: border-box;
+}
+.toggle{
+    width:13px;
+    height:13px;
+    border:none;
+    border-radius:50%;
+    position:absolute;
+    left:0;
+    top:1.5px;
+    margin:auto 1.5px;
+    color:hsl(213, 96%, 18%);
+    transition:1s ease;
+}
+.monthly{
+    color:hsl(213, 96%, 18%);
+}
+.myMove{
+    width:13px;
+    height:13px;
+    border:none;
+    border-radius:50%;
+    position:absolute;
+    left:24px !important;
+    top:1.5px;
+    margin:auto 1.5px;
+    transition:1s ease;
+}
+.planBox h3{
+    color:hsl(213, 96%, 18%);
+}
+@media screen and (max-width:600px){
+    .second{
+        width:90%;
+        height:fit-content;
+        border-radius:10px;
+        background-color:hsl(0, 0%, 100%);
+        position: absolute;
+        top:-75px;
+        right:0;
+        left:0;        
+        margin:auto;
+        padding:20px;
+        box-sizing:border-box;
+    }
+    .planParent{
+        flex-direction:column;
+    }
+    .plansContainer{
+        width:100%;
+        height:80px;
+    }
+    .planBox{
+        display:flex;
+        gap:10px;
+        justify-content:left;
+        align-items:center;
+        height:100%;
+        width:100%;
+    }
+    .logo{
+        height:100%;
+        width:fit-content;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .planBox{
+        flex-direction: row;
+    }
+    .toggleBox{
+        margin-top:20px;
+        height:40px;
+    }
+}
