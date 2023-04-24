@@ -37,7 +37,7 @@ let stp4 = document.getElementById("stp-4");
             selectDuration(planAmount,10,"/yr");
             selectDuration(addsAmount,10,"/yr");
             dur.innerHTML = "(per year)";
-              // when duration is changed after we've selected our options, previous option are being clered
+              // when duration is changed after we've selected our options, previous option are being cleared
             document.getElementById("plans").innerHTML =""
             document.querySelector(".planPrice").innerHTML =""
             let pkgParent = document.querySelector(".package-parent").innerHTML = ""
@@ -51,7 +51,7 @@ let stp4 = document.getElementById("stp-4");
             selectDuration(planAmount,0.10,"/mo");
             selectDuration(addsAmount,0.10,"/mo");
             dur.innerHTML = "(per month)";
-            // when duration is changed after we've selected our options, previous option are being clered
+            // when duration is changed after we've selected our options, previous option are being cleared
             document.getElementById("plans").innerHTML =""
             document.querySelector(".planPrice").innerHTML =""
             let pkgParent = document.querySelector(".package-parent").innerHTML = ""
@@ -67,13 +67,14 @@ let stp4 = document.getElementById("stp-4");
     container.forEach(item=>{
         item.addEventListener("click", function updatePrice(e){
             let target = e.target;
+            target.focus();
             const price1 = document.getElementById("dur1");
             const price2 = document.getElementById("dur2");
             const price3 = document.getElementById("dur3");
             const planArcade = document.querySelector(".arcade");
             const planAdvance = document.querySelector(".advance");
             const planPro = document.querySelector(".pro");
-            target.focus();   
+              
             if(target.contains(price1) && target.contains(planArcade)){
                 document.querySelector(".planPrice").innerHTML = price1.innerHTML;
                 if(price1.innerHTML.includes("mo")){
@@ -119,7 +120,6 @@ const ele1 = item.parentElement.nextElementSibling;
                     const ele2 = ele1.nextElementSibling;
                      let pkgAmt = ele2.children[0].innerHTML; 
                      const pkgParent = document.createElement("div")  
-                     const sumUp = document.querySelector(".sum_up")
                      pkgParent.className = "pkgParent"   
                       pkgParent.innerHTML = `<div class="pkgOpt">${pkgTxt}</div>
                           <div class="pkgPrice">${pkgAmt}</div>`;  

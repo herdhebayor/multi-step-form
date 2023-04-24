@@ -160,9 +160,6 @@ button{
 .input-parent{
     margin-top:10px;
 }
-.inpErr{
-    border-color:hsl(354, 84%, 57%);
-}
 .form{
     width:inherit;
     height:inherit;
